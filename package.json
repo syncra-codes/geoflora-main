@@ -1,0 +1,22 @@
+{
+  "name": "geoflora-web-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GeoFlora: A Geospatial Information System and Mobile Catalog for Philippine Medicinal Flora with Computer Vision-Based Leaf Species Identification",
+  "scripts": {
+    "dev:client": "npm run dev --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "build:client": "npm run build --prefix client",
+    "install:all": "npm install && npm install --prefix client && npm install --prefix server",
+    "lint": "npm run lint --prefix client"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geoflora-main.git"
+  },
+  "license": "MIT"
+}
